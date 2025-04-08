@@ -1,0 +1,159 @@
+/* ----------------------- */
+/* Tampilan Halaman Utama */
+/* ----------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A1931; /* Biru Tua */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* ----------------------- */
+/* Container Utama */
+/* ----------------------- */
+.container {
+    background-color: #162447; /* Biru Gelap */
+    padding: 50px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6); /* Magenta Glow */
+    animation: fadeIn 0.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------- */
+/* Judul Halaman */
+/* ----------------------- */
+h1 {
+    color: #FF00FF;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* ----------------------- */
+/* Formulir Edit */
+/* ----------------------- */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #FF00FF;
+}
+
+select {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    background: #1F4068;
+    color: white;
+    border: 2px solid #FF00FF;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+select:hover, select:focus {
+    background: #1B1F3B;
+}
+
+/* ----------------------- */
+/* Tombol Aksi */
+/* ----------------------- */
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #FF00FF;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px solid transparent;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D400D4;
+    border: 2px solid white;
+}
+
+/* Tombol Hapus */
+.btn-delete {
+    background-color: #FF0000;
+    border: 2px solid #FF0000;
+}
+
+.btn-delete:hover {
+    background-color: #C00000;
+    border: 2px solid white;
+}
+
+/* Tombol Batal */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border: 2px solid white;
+}
+
+/* ----------------------- */
+/* Responsiveness */
+/* ----------------------- */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    select {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    button, .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}

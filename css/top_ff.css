@@ -1,0 +1,115 @@
+/* Mengatur tampilan halaman agar konten di tengah */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A1931; /* Biru Tua */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Container utama */
+.container {
+    background-color: #162447; /* Biru Gelap */
+    padding: 50px;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.8); /* Magenta Glow */
+}
+
+/* Judul */
+h1 {
+    color: #FF00FF;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+/* Label */
+label {
+    display: block;
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Input & Select */
+input, select {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 3px solid #FF00FF;
+    border-radius: 12px;
+    background-color: #1F4068;
+    color: white;
+}
+
+/* Tombol Submit */
+button {
+    width: 100%;
+    padding: 18px;
+    font-size: 22px;
+    background-color: #FF00FF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button a {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #D400D4;
+}
+
+/* Tombol kembali */
+.back-btn {
+    display: block;
+    margin-top: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+    color: #FF00FF;
+}
+
+
+/* ----------------------- */
+/* Tombol Kembali */
+/* ----------------------- */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-size: 22px;
+    background-color: #FF00FF;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+}
+
+.back-btn:hover {
+    background-color: #D400D4;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 1);
+    transform: scale(1.1);
+}

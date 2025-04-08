@@ -1,0 +1,241 @@
+/* ----------------------- */
+/* Mengatur tampilan halaman */
+/* ----------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A1931; /* Biru Tua */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* ----------------------- */
+/* Container Utama */
+/* ----------------------- */
+.container {
+    background-color: #162447; /* Biru Gelap */
+    padding: 50px;
+    width: 80%;
+    max-width: 850px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6); /* Magenta Glow */
+    animation: fadeIn 0.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Animasi masuk */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------- */
+/* Judul Halaman */
+/* ----------------------- */
+h1 {
+    color: #FF00FF;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+/* ----------------------- */
+/* Pesan Sukses */
+/* ----------------------- */
+.success-message {
+    font-size: 20px;
+    background: #1F4068;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #FF00FF;
+}
+
+/* ----------------------- */
+/* Container Tabel agar di tengah */
+/* ----------------------- */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* ----------------------- */
+/* Tabel Transaksi */
+/* ----------------------- */
+table {
+    width: 95%;
+    max-width: 750px;
+    border-collapse: collapse;
+    background-color: #1F4068;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header dan Isi Tabel */
+th, td {
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 18px;
+}
+
+/* Warna header */
+th {
+    background-color: #1B1F3B;
+}
+
+/* Efek Hover di Tabel */
+tr:hover {
+    background-color: rgba(255, 0, 255, 0.2);
+    transition: 0.3s;
+}
+
+/* ----------------------- */
+/* Warna Status Transaksi */
+/* ----------------------- */
+.success {
+    color: #00FF00; /* Hijau */
+    font-weight: bold;
+}
+
+.pending {
+    color: #FFA500; /* Oranye */
+    font-weight: bold;
+}
+
+.failed {
+    color: #FF0000; /* Merah */
+    font-weight: bold;
+}
+
+/* ----------------------- */
+/* Tombol Edit & Kembali */
+/* ----------------------- */
+.btn-edit {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+    border: 2px solid white;
+}
+
+/* Tombol Kembali */
+.back-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 22px;
+    background-color: #FF00FF;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 20px;
+    border: 2px solid transparent;
+}
+
+.back-btn:hover {
+    background-color: #D400D4;
+    border: 2px solid white;
+}
+
+/* ----------------------- */
+/* Responsiveness */
+/* ----------------------- */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .btn-edit {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .back-btn {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+    
+}
+
+/* ----------------------- */
+/* Tombol Kembali */
+/* ----------------------- */
+.btn {
+    display: inline-block;
+    padding: 15px 35px; /* Dibuat lebih besar */
+    font-size: 20px;
+    background-color: #FF00FF; /* Warna magenta mencolok */
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.8); /* Glow efek */
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: #D400D4;
+    border-color: #FFF;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 1);
+    transform: scale(1.05);
+}
+
+/* Untuk Mobile */
+@media screen and (max-width: 768px) {
+    .btn {
+        font-size: 18px;
+        padding: 12px 28px;
+    }
+}
+

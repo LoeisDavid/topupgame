@@ -1,0 +1,230 @@
+/* ----------------------- */
+/* Mengatur tampilan halaman agar konten di tengah */
+/* ----------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A1931; /* Biru Tua */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* ----------------------- */
+/* Container Utama */
+/* ----------------------- */
+.container {
+    background-color: #162447; /* Biru Gelap */
+    padding: 50px;
+    width: 750px; /* Lebih besar untuk kenyamanan */
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.8); /* Magenta Glow */
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animasi masuk */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ----------------------- */
+/* Judul Halaman */
+/* ----------------------- */
+h1 {
+    color: #FF00FF;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+}
+
+/* ----------------------- */
+/* Deskripsi & Paragraf */
+/* ----------------------- */
+p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #FFF;
+}
+
+/* ----------------------- */
+/* Daftar Game */
+/* ----------------------- */
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ----------------------- */
+/* Tombol Pilihan Game */
+/* ----------------------- */
+.game-card {
+    background-color: #FF00FF; /* Magenta */
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 12px;
+    transition: 0.3s;
+    display: inline-block;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+}
+
+.game-card:hover {
+    background-color: #D400D4; /* Magenta Lebih Gelap */
+    transform: scale(1.05);
+}
+
+/* ----------------------- */
+/* Tombol Kembali */
+/* ----------------------- */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-size: 22px;
+    background-color: #FF00FF;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+}
+
+.back-btn:hover {
+    background-color: #D400D4;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 1);
+    transform: scale(1.1);
+}
+
+/* ----------------------- */
+/* Form Cek History - Sekarang benar-benar di tengah */
+/* ----------------------- */
+.history-check {
+    margin: 30px auto; /* Menjadikan elemen di tengah */
+    background-color: #1F4068; /* Biru Tua */
+    padding: 30px;
+    border-radius: 12px;
+    width: 50%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Judul dalam history-check */
+.history-check h2 {
+    font-size: 28px;
+    color: #FF00FF; /* Magenta */
+    margin-bottom: 15px;
+}
+
+/* ----------------------- */
+/* Input Field */
+/* ----------------------- */
+.history-check input {
+    width: 90%;
+    padding: 15px;
+    font-size: 20px;
+    margin: 10px 0;
+    border: 3px solid #FF00FF;
+    border-radius: 12px;
+    background-color: #162447;
+    color: white;
+    text-align: center;
+}
+
+/* ----------------------- */
+/* Tombol Cek History */
+/* ----------------------- */
+.history-check button {
+    width: 100%;
+    padding: 15px;
+    font-size: 22px;
+    background-color: #FF00FF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.history-check button:hover {
+    background-color: #D400D4;
+}
+
+/* ----------------------- */
+/* Link dalam history-check */
+/* ----------------------- */
+.history-check a {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.history-check a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------- */
+/* Responsiveness */
+/* ----------------------- */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .game-card {
+        font-size: 22px;
+        padding: 15px 30px;
+    }
+
+    .back-btn {
+        font-size: 18px;
+        padding: 12px 28px;
+    }
+
+    .history-check {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .history-check input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .history-check button {
+        font-size: 20px;
+        padding: 12px;
+    }
+}
